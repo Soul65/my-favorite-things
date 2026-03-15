@@ -1,0 +1,19 @@
+{
+    "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v11/terminal-keeper.json",
+    "theme": "tribe",
+    "active": "default",
+    "activateOnStartup": true,
+    "keepExistingTerminals": false,
+    "sessions_temp": {
+        "default": [
+            {
+                "name": "start",
+                "color": "terminal.ansiGreen",
+				"autoExecuteCommands": true,
+                "commands": [
+                    "turbo start"
+                ]
+            }
+        ]
+    }
+}

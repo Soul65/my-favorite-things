@@ -1,0 +1,32 @@
+{
+	"name": "my-favorite-things",
+	"version": "1.0.0",
+	"private": true,
+	"homepage": "https://github.com/Soul65/my-favorite-things#readme",
+	"bugs": {
+		"url": "https://github.com/Soul65/my-favorite-things/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Soul65/my-favorite-things.git"
+	},
+	"license": "MIT",
+	"author": "Matt Allen",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"format": "turbo format",
+		"lint": "turbo lint",
+		"add:global": "sudo env PATH=$PATH pnpm add -g",
+		"ncu": "ncu --deep && ncu -g",
+		"ncu:shallow:update": "ncu -u && pnpm install",
+		"ncu:update": "ncu --deep -u && pnpm install",
+		"ncu:interactive": "ncu --deep -i --format group"
+	},
+	"devDependencies": {
+		"@turbo/gen": "^2.8.17"
+	},
+	"packageManager": "pnpm@10.32.1"
+}
