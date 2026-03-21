@@ -1,0 +1,55 @@
+# Add files here to ignore them from prettier formatting
+
+# Global ignores
+.certs
+.github
+
+# Compiled output
+.cache
+.dist
+coverage
+dist
+package-lock.json
+.turbo
+pnpm-lock.yaml
+
+# Dependencies
+/node_modules
+**/node_modules
+
+# Markdown files
+*.md
+
+# Output YML files
+dist/*/*.yml
+
+# IDEs and editors
+.settings/
+.history
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Others
+~$*
+*~
+CodeCoverage/
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Next.js build output
+.next

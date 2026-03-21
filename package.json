@@ -17,7 +17,7 @@
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",
-		"format": "turbo format",
+		"format": "prettier --write . --ignore-path .gitignore",
 		"lint": "turbo lint",
 		"add:global": "sudo env PATH=$PATH pnpm add -g",
 		"ncu": "ncu --deep && ncu -g",
