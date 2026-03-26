@@ -14,8 +14,7 @@ package-lock.json
 pnpm-lock.yaml
 
 # Dependencies
-/node_modules
-**/node_modules
+node_modules
 
 # Markdown files
 *.md

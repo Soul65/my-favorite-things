@@ -8,6 +8,12 @@
 		"check-types": {
 			"dependsOn": ["^check-types"]
 		},
+		"lint": {
+			"dependsOn": ["^lint"]
+		},
+		"format": {
+			"dependsOn": ["^format"]
+		},
 		"dev": {
 			"persistent": true,
 			"cache": false

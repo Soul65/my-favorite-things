@@ -9,7 +9,9 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {},
-		// "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": false
+		},
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
@@ -17,6 +19,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"ms-azuretools.vscode-containers",
+				"eamodio.gitlens",
 				"dbaeumer.vscode-eslint",
 				"GitHub.vscode-github-actions",
 				"esbenp.prettier-vscode",
@@ -30,10 +34,10 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [3000, 4200]
+	"forwardPorts": [3000, 4200],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pnpm install",
+	"postCreateCommand": "pnpm install --config.confirmModulesPurge=false"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
