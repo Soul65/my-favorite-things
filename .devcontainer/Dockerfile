@@ -13,7 +13,6 @@ ENV SHELL="/bin/bash"
 RUN corepack enable pnpm
 
 RUN pnpm config set store-dir "${PNPM_HOME}/store"
-RUN pnpm add -g npm-check-updates turbo prettier
 
 RUN chown -R node:node /home/node
 
