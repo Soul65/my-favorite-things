@@ -17,7 +17,7 @@
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",
-		"format": "turbo format",
+		"format": "prettier --write .",
 		"lint": "turbo lint",
 		"filter:frontend": "pnpm --filter frontend",
 		"filter:api": "pnpm --filter api",
@@ -27,7 +27,7 @@
 		"ncu:interactive": "ncu --deep -i --format group"
 	},
 	"devDependencies": {
-		"@turbo/gen": "^2.9.3"
+		"@turbo/gen": "^2.9.5"
 	},
 	"packageManager": "pnpm@10.33.0"
 }
