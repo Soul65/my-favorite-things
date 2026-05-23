@@ -21,13 +21,13 @@
 		"lint": "turbo lint",
 		"filter:frontend": "pnpm --filter frontend",
 		"filter:api": "pnpm --filter api",
-		"ncu": "ncu --deep && ncu -g",
-		"ncu:shallow:update": "ncu -u && pnpm install",
-		"ncu:update": "ncu --deep -u && pnpm install",
-		"ncu:interactive": "ncu --deep -i --format group"
+		"check:deps": "pnpm outdated -r",
+		"check:deps:global": "pnpm outdated -g",
+		"update:deps": "pnpm update -r -i --latest",
+		"update:deps:global": "pnpm update -g --latest"
 	},
 	"devDependencies": {
-		"@turbo/gen": "^2.9.5"
+		"@turbo/gen": "^2.9.14"
 	},
-	"packageManager": "pnpm@10.33.0"
+	"packageManager": "pnpm@11.1.2"
 }

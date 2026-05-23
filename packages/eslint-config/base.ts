@@ -21,5 +21,5 @@ export const baseConfig = defineConfig(
 		rules: {
 			'turbo/no-undeclared-env-vars': 'warn',
 		},
-	}
+	},
 );

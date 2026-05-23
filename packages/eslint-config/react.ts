@@ -1,15 +1,17 @@
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
-import { baseConfig } from './base.js';
+import { baseConfig } from './base.ts';
 
 /**
  * A custom ESLint configuration for libraries that use React.
  *
  * @type {import("eslint").Linter.Config} */
-export const config = [
-	...baseConfig,
+export const config = defineConfig(
+	baseConfig,
 	pluginReact.configs.flat.recommended,
+	pluginReact.configs.flat['jsx-runtime'],
 	{
 		languageOptions: {
 			...pluginReact.configs.flat.recommended.languageOptions,
@@ -19,13 +21,5 @@ export const config = [
 			},
 		},
 	},
-	{
-		plugins: {
-			'react-hooks': pluginReactHooks,
-		},
-		settings: { react: { version: 'detect' } },
-		rules: {
-			...pluginReactHooks.configs.recommended.rules,
-		},
-	},
-];
+	pluginReactHooks.configs.flat.recommended,
+);
