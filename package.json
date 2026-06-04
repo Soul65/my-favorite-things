@@ -25,10 +25,10 @@
 		"check:deps": "pnpm outdated -r",
 		"check:deps:global": "pnpm outdated -g",
 		"update:deps": "pnpm update -r -i --latest",
-		"update:deps:global": "pnpm update -g --latest"
+		"update:deps:global": "pnpm update -g --latest && echo 'Run the command manually.'"
 	},
 	"devDependencies": {
 		"@turbo/gen": "^2.9.16"
 	},
-	"packageManager": "pnpm@11.2.2"
+	"packageManager": "pnpm@11.5.1"
 }
