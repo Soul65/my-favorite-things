@@ -19,6 +19,7 @@
 		"dev": "turbo dev",
 		"format": "prettier --write .",
 		"lint": "turbo lint",
+		"lint:types": "turbo run lint:types",
 		"filter:frontend": "pnpm --filter frontend",
 		"filter:api": "pnpm --filter api",
 		"check:deps": "pnpm outdated -r",
@@ -27,7 +28,7 @@
 		"update:deps:global": "pnpm update -g --latest"
 	},
 	"devDependencies": {
-		"@turbo/gen": "^2.9.14"
+		"@turbo/gen": "^2.9.16"
 	},
-	"packageManager": "pnpm@11.1.2"
+	"packageManager": "pnpm@11.2.2"
 }
