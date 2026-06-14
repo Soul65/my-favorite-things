@@ -7,7 +7,7 @@ RUN apt update && apt upgrade -y && \
 
 # Configure pnpm
 ENV PNPM_HOME="/home/node/.local/share/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
+ENV PATH="$PNPM_HOME/bin:$PNPM_HOME:$PATH"
 ENV SHELL="/bin/bash"
 
 RUN corepack enable pnpm

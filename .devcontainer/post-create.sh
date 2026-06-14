@@ -5,7 +5,7 @@ echo "[INFO] Running post-create..."
 
 # Install pnpm dependencies
 echo "[INFO] Installing pnpm global dependencies..."
-pnpm add -g npm-check-updates turbo prettier
+pnpm add -g turbo prettier
 
 echo "[INFO] Installing pnpm dependencies..."
 pnpm install --config.confirmModulesPurge=false
