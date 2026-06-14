@@ -28,7 +28,8 @@
 				"yoavbls.pretty-ts-errors",
 				"xyz.local-history",
 				"nguyenngoclong.terminal-keeper",
-				"mongodb.mongodb-vscode"
+				"mongodb.mongodb-vscode",
+				"anthropic.claude-code"
 			]
 		}
 	},
